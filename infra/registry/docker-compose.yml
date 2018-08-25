@@ -18,6 +18,12 @@ volumes:
 
 #docker-machine ssh
 #sudo vi /var/lib/boot2docker/profile
+#To enter vi, type: vi filename <Return>
+#To enter insert mode, type: i.
+#Type in the text: This is easy.
+#To leave insert mode and return to command mode, press: <Esc>
+#In command mode, save changes and exit vi by typing: :wq <Return>
+
 #Add this line to the EXTRA_ARGS var:
 #--insecure-registry=192.168.99.100:5000
 #exit
