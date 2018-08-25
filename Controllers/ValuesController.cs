@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using primeapi.lib;
 
 namespace primeapi.Controllers
 {
@@ -19,9 +20,9 @@ namespace primeapi.Controllers
 
         // GET api/primes/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<bool> Get(int id)
         {
-            return "value";
+            return new PrimeService().IsPrime(id);
         }
 
         // POST api/primes
