@@ -15,5 +15,7 @@ namespace tests
         [Fact]
         public void NineIsNotPrime() => Assert.False(new PrimeService().IsPrime(9));
         
+        [Fact]
+        public void TwelveIsNotPrime() => Assert.False(new PrimeService().IsPrime(2));        
     }
 }
