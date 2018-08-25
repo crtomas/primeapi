@@ -25,6 +25,6 @@ volumes:
 #In command mode, save changes and exit vi by typing: :wq <Return>
 
 #Add this line to the EXTRA_ARGS var:
-#--insecure-registry=192.168.99.100:5000
+#--insecure-registry=192.168.99.100:55000
 #exit
 #docker-machine restart
