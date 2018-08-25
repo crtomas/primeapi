@@ -1,0 +1,5 @@
+Command Line Build Step
+
+image="192.168.99.100:55000/primesapi:ci-%build.number%"
+docker build -t $image .
+docker push $image
