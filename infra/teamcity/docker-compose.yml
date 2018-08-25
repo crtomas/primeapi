@@ -2,14 +2,14 @@ version: '3.1'
 
 services:
     teamcity:
-        image: jetbrains/teamcity-server:2017.1.2
+        image: jetbrains/teamcity-server:2018.1.1
         volumes:
             - teamcity-server-datadir:/data/teamcity_server/datadir
             - teamcity-server-logs:/opt/teamcity/logs
         ports:
             - 8111:8111
     teamcity-agent:
-        image: aspnetcore/teamcity-agent-with-compose:2017.1.2
+        image: aspnetcore/teamcity-agent-with-compose:2018.1.1
         build: ./agent
         environment:
             SERVER_URL: http://teamcity:8111
@@ -20,3 +20,9 @@ services:
 volumes:
     teamcity-server-datadir:
     teamcity-server-logs:
+	
+#http://192.168.99.100:8111
+#Corrupted => remove volumes  
+#docker volume ls
+#docker volume rm teamcity-server-datadir
+#docker volume rm teamcity-server-logs
