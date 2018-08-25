@@ -20,7 +20,7 @@ services:
 volumes:
     teamcity-server-datadir:
     teamcity-server-logs:
-	
+
 #http://192.168.99.100:8111
 #Corrupted => remove volumes  
 #docker volume ls
