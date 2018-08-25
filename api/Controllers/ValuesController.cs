@@ -15,7 +15,7 @@ namespace primeapi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "2", "3","5","7","11","13","17","19","..." };
+            return new string[] { "2", "3","5","7","11","13","17","19","23","29","..." };
         }
 
         // GET api/primes/5
